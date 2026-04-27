@@ -1,1 +1,0 @@
-# Patst-v-gais-darbs
