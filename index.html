@@ -7,14 +7,14 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: url("images/background.jpg");
     background-size: cover;
 }
 
 /* GALVENE */
 header {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.8);
     color: white;
     padding: 15px;
     text-align: center;
@@ -22,7 +22,7 @@ header {
 
 nav a {
     color: white;
-    margin: 15px;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -31,7 +31,7 @@ nav a {
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 25px;
     padding: 30px;
 }
 
@@ -39,17 +39,17 @@ nav a {
     position: relative;
     background: url("images/camera.png") no-repeat center;
     background-size: contain;
-    height: 250px;
+    height: 260px;
     cursor: pointer;
 }
 
-/* GALERIJAS ATTĒLS */
+/* IEKŠĒJAIS ATTĒLS */
 .block img {
     position: absolute;
-    top: 20%;
-    left: 20%;
-    width: 60%;
-    height: 60%;
+    top: 22%;
+    left: 22%;
+    width: 56%;
+    height: 56%;
     object-fit: cover;
 }
 
@@ -57,12 +57,13 @@ nav a {
 .overlay {
     position: absolute;
     bottom: 0;
+    width: 100%;
     background: rgba(0,0,0,0.7);
     color: white;
-    width: 100%;
     text-align: center;
     opacity: 0;
     transition: 0.3s;
+    padding: 10px;
 }
 
 .block:hover .overlay {
@@ -71,14 +72,14 @@ nav a {
 
 /* SATURS */
 section {
-    padding: 30px;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.85);
     margin: 20px;
+    padding: 25px;
 }
 
 /* KĀJENE */
 footer {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.8);
     color: white;
     padding: 20px;
 }
@@ -106,41 +107,45 @@ function openPage(page) {
 <!-- GALERIJA -->
 <div id="galerija" class="container">
 
-    <div class="block" onclick="openPage('dzimsana.html')">
-        <img src="images/dzimsana.jpg">
-        <div class="overlay">Dzimšanas dienas</div>
-    </div>
+<div class="block" onclick="openPage('dzimsana.html')">
+    <img src="images/dzimsana.jpg">
+    <div class="overlay">Dzimšanas dienas</div>
+</div>
 
-    <div class="block" onclick="openPage('ziema.html')">
-        <img src="images/ziema.jpg">
-        <div class="overlay">Ziemassvētki</div>
-    </div>
+<div class="block" onclick="openPage('ziemassvetki.html')">
+    <img src="images/ziema.jpg">
+    <div class="overlay">Ziemassvētki</div>
+</div>
 
-    <div class="block" onclick="openPage('jaunais.html')">
-        <img src="images/jaunais.jpg">
-        <div class="overlay">Jaunais gads</div>
-    </div>
+<div class="block" onclick="openPage('jaunaisgads.html')">
+    <img src="images/jaunais.jpg">
+    <div class="overlay">Jaunais gads</div>
+</div>
 
-    <div class="block" onclick="openPage('lieldienas.html')">
-        <img src="images/lieldienas.jpg">
-        <div class="overlay">Lieldienas</div>
-    </div>
+<div class="block" onclick="openPage('lieldienas.html')">
+    <img src="images/lieldienas.jpg">
+    <div class="overlay">Lieldienas</div>
+</div>
 
 </div>
 
 <!-- SATURS -->
 <section id="saturs">
-<h2>Svētku tradīcijas mūsu ģimenē</h2>
+<h2>Svētki mūsu ģimenē</h2>
 
-<p><b>Dzimšanas dienas</b> – svinam kopā ar ģimeni, kūka, sveces un dāvanas.</p>
+<h3>Dzimšanas dienas</h3>
+<p>Svinam ar kūku, svecēm, dāvanām un jautrām spēlēm.</p>
 
-<p><b>Ziemassvētki</b> – rotājam eglīti, gatavojam svētku vakariņas un klausāmies mierīgu mūziku.</p>
+<h3>Ziemassvētki</h3>
+<p>Rotājam eglīti, gatavojam svētku vakariņas un klausāmies Ziemassvētku dziesmas.</p>
 
-<p><b>Jaunais gads</b> – skatāmies salūtu, spēlējam spēles un sagaidām pusnakti kopā.</p>
+<h3>Jaunais gads</h3>
+<p>Sagaidām pusnakti ar salūtu, spēlēm un kopīgu svinēšanu.</p>
 
-<p><b>Lieldienas</b> – krāsojam olas, spēlējam olu kaujas un šūpojamies.</p>
+<h3>Lieldienas</h3>
+<p>Krāsojam olas, rīkojam olu kaujas un šūpojamies.</p>
 
-<p>Kopīgās iezīmes – kopā būšana, tradicionāls ēdiens, mūzika un pozitīva atmosfēra.</p>
+<p><b>Kopīgais:</b> kopā būšana, tradīcijas, īpašs ēdiens un laba noskaņa.</p>
 
 </section>
 
